@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: Minu API (Eesti)
+  description: See on API eestikeelne versioon.
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: Avaleht
+      description: Tagastab tervitussõnumi eesti keeles.
+      responses:
+        '200':
+          description: Tervitussõnum
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Tere tulemast API-sse!"

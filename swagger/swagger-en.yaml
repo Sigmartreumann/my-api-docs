@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: My API (English)
+  description: This is the English version of the API.
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: Home
+      description: Returns a welcome message in English.
+      responses:
+        '200':
+          description: A welcome message
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Welcome to the API!"
